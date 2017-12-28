@@ -14,7 +14,7 @@ public class Test {
         WeatherWebService weatherWebService = new WeatherWebService();
         WeatherWebServiceSoap soap = weatherWebService.getWeatherWebServiceSoap();
         System.out.println("-----------------------");
-        ArrayOfString weatherInfo = soap.getWeatherbyCityName("上海");
+        ArrayOfString weatherInfo = soap.getWeatherbyCityName("北京");
         for(String str : weatherInfo.getString()) {
             System.out.println("天气信息: " + str);
         }
